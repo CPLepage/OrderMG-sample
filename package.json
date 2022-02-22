@@ -4,7 +4,9 @@
   "description": "OrderMG sample setup.",
   "scripts": {
     "postinstall": "node Scripts/postinstall",
-    "build": "node Scripts/build"
+    "coreupdate": "node Scripts/coreupdate",
+    "build": "node Scripts/build",
+    "start": "node OrderMG-core/dist/index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/CPLepage/OrderMG-sample/issues"
   },
-  "homepage": "https://github.com/CPLepage/OrderMG-sample#readme"
+  "homepage": "https://github.com/CPLepage/OrderMG-sample#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
 }

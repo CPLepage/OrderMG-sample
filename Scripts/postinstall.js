@@ -1,8 +1,6 @@
 const fs = require("fs");
-const path = require("path");
 const child_process = require("child_process");
-
-const pathCore = path.resolve(__dirname, "../OrderMG-core")
+const {pathCore} = require("./constant");
 
 function checkForCore(){
     return fs.existsSync(pathCore + "/package.json");
