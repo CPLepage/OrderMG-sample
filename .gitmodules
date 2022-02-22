@@ -1,0 +1,3 @@
+[submodule "OrderMG-core"]
+	path = OrderMG-core
+	url = https://github.com/CPLepage/OrderMG-core.git
