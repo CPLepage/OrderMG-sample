@@ -1,0 +1,19 @@
+{
+  "name": "ordermg-sample",
+  "version": "0.0.0",
+  "description": "OrderMG sample setup.",
+  "scripts": {
+    "postinstall": "node Scripts/postinstall",
+    "build": "node Scripts/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPLepage/OrderMG-sample.git"
+  },
+  "author": "CP Lepage",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CPLepage/OrderMG-sample/issues"
+  },
+  "homepage": "https://github.com/CPLepage/OrderMG-sample#readme"
+}
