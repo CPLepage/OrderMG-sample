@@ -5,7 +5,7 @@ const child_process = require("child_process");
 const pathCore = path.resolve(__dirname, "../OrderMG-core")
 
 function checkForCore(){
-    return fs.existsSync(pathCore);
+    return fs.existsSync(pathCore + "/package.json");
 }
 
 function installCoreDeps(){
