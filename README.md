@@ -6,6 +6,8 @@ changes whenever.
 
 ## Forking from GitHub to GitLab
 
+*source: https://stackoverflow.com/a/52954199*
+
 1. First make an empty repository in GitLab and clone it to your computer.
 2. Then add this project as the "upstream" remote with:
 ```
