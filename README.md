@@ -9,7 +9,11 @@ changes whenever.
 *source: https://stackoverflow.com/a/52954199*
 
 1. First make an empty repository in GitLab and clone it to your computer.
-2. Then add this project as the "upstream" remote with:
+```
+git clone https://gitlab-instance-url/your-project.git
+cd your-project
+```
+2. Then add this project as the "upstream" remote with.
 ```
 git remote add upstream https://github.com/CPLepage/OrderMG-sample.git
 ```
@@ -17,7 +21,12 @@ git remote add upstream https://github.com/CPLepage/OrderMG-sample.git
 ```
 git pull upstream main
 ```
-4. Finally, push back to your own GitLab repository:
+4. Create **your** main branch and your first commit.
 ```
-git push origin main
+git switch -c main
+git commit -m "first commit"
+```
+5. Finally, push back to your own GitLab repository.
+```
+git push -u origin main
 ```
