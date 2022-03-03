@@ -8,6 +8,10 @@ if(process.env.SERVICES_PATH){
     process.env.SERVICES_PATH = path.resolve(__dirname, "../", process.env.SERVICES_PATH);
 }
 
+if(process.env.CONSTANTS_FILE){
+    process.env.CONSTANTS_FILE = path.resolve(__dirname, "../", process.env.CONSTANTS_FILE);
+}
+
 function buildCore(){
     console.log('\x1b[33m%s\x1b[0m', "Building Core");
 
