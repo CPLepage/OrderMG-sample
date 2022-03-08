@@ -7,7 +7,8 @@
     "coreupdate": "node Scripts/coreupdate",
     "build": "node Scripts/build",
     "start": "node OrderMG-core/dist/index",
-    "test": "node Scripts/test"
+    "test": "node Scripts/test",
+    "coverage": "npx nyc --reporter text-summary --reporter html npm test"
   },
   "repository": {
     "type": "git",
