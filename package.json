@@ -6,7 +6,8 @@
     "postinstall": "node Scripts/postinstall",
     "coreupdate": "node Scripts/coreupdate",
     "build": "node Scripts/build",
-    "start": "node OrderMG-core/dist/index"
+    "start": "node OrderMG-core/dist/index",
+    "test": "node Scripts/test"
   },
   "repository": {
     "type": "git",
