@@ -1,1 +1,8 @@
-{}
+{
+    "compilerOptions": {
+        "baseUrl": "OrderMG-core/Server",
+        "paths": {
+            "@shared/*": ["../Shared/*"]
+        }
+    }
+}

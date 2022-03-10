@@ -1,16 +1,18 @@
 const fs = require("fs");
 const child_process = require("child_process");
-const {pathCore} = require("./constant");
+const {CORE} = require("./paths");
+
+process.env['FORCE_COLOR'] = 1;
 
 function checkForCore(){
-    return fs.existsSync(pathCore + "/package.json");
+    return fs.existsSync(CORE + "/package.json");
 }
 
 function installCoreDeps(){
     console.log('\x1b[33m%s\x1b[0m', "Installing Core dependencies");
 
     return new Promise(resolve => {
-        const installProcess = child_process.exec(`cd ${pathCore} && npm install`);
+        const installProcess = child_process.exec(`cd ${CORE} && npm install`);
         installProcess.stdout.pipe(process.stdout);
         installProcess.stderr.pipe(process.stderr);
 
