@@ -1,5 +1,5 @@
 const child_process = require("child_process");
-const {pathCore} = require("./constant");
+const {CORE} = require("./paths");
 
 process.env['FORCE_COLOR'] = 1;
 
@@ -18,7 +18,7 @@ function launchTests(){
 
     return new Promise(resolve => {
         const installProcess = child_process.exec(
-            `cd ${pathCore} && npm run ${process.argv.includes("--coverage") ? "coverage" : "test"}`,
+            `cd ${CORE} && npm run ${process.argv.includes("--coverage") ? "coverage" : "test"}`,
             {env: process.env});
         installProcess.stdout.pipe(process.stdout);
         installProcess.stderr.pipe(process.stderr);
