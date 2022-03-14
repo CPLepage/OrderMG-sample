@@ -8,7 +8,7 @@
     "build": "node Scripts/build",
     "start": "node OrderMG-core/dist/index",
     "test": "node Scripts/test",
-    "coverage": "npx nyc --reporter text-summary --reporter html npm test"
+    "coverage": "c8 --exclude-after-remap --reporter text-summary --reporter html npm test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CPLepage/OrderMG-sample#readme",
   "dependencies": {
+    "c8": "^7.11.0",
     "dotenv": "^16.0.0"
   }
 }
