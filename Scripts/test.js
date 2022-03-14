@@ -18,7 +18,7 @@ function launchTests(){
 
     return new Promise(resolve => {
         const installProcess = child_process.exec(
-            `cd ${CORE} && npm run ${process.argv.includes("--coverage") ? "coverage" : "test"}`,
+            `cd ${CORE} && npm run test`,
             {env: process.env});
         installProcess.stdout.pipe(process.stdout);
         installProcess.stderr.pipe(process.stderr);
